@@ -1,0 +1,152 @@
+Linux version 3.2.28-fjen-1 (fjen@ls-chlv2) (gcc version 4.6.3 (Debian 4.6.3-8) ) #1 Wed Aug 29 15:16:42 CEST 2012
+CPU: Feroceon 88FR131 [56251311] revision 1 (ARMv5TE), cr=00053177
+CPU: VIVT data cache, VIVT instruction cache
+Machine: Buffalo LS-CHLv2
+Ignoring unrecognised tag 0x41000403
+Memory policy: ECC disabled, Data cache writeback
+On node 0 totalpages: 16384
+free_area_init_node: node 0, pgdat c0332c1c, node_mem_map c0351000
+  Normal zone: 128 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 16256 pages, LIFO batch:3
+pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+pcpu-alloc: [0] 0 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 16256
+Kernel command line: console=ttyS0,115200 root=/dev/sda2 rw panic=5 BOOTVER=0.10
+PID hash table entries: 256 (order: -2, 1024 bytes)
+Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+Memory: 64MB = 64MB total
+Memory: 61536k/61536k available, 4000k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xc4800000 - 0xfe800000   ( 928 MB)
+    lowmem  : 0xc0000000 - 0xc4000000   (  64 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .text : 0xc0008000 - 0xc02f3c00   (2991 kB)
+      .init : 0xc02f4000 - 0xc0313000   ( 124 kB)
+      .data : 0xc0314000 - 0xc0334340   ( 129 kB)
+       .bss : 0xc0334364 - 0xc0350d04   ( 115 kB)
+SLUB: Genslabs=13, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+NR_IRQS:114
+sched_clock: 32 bits at 166MHz, resolution 5ns, wraps every 25769ms
+Console: colour dummy device 80x30
+Calibrating delay loop... 597.60 BogoMIPS (lpj=2988032)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+NET: Registered protocol family 16
+Kirkwood: MV88F6281-A1, TCLK=166666667.
+Feroceon L2: Enabling L2
+Feroceon L2: Cache support initialised.
+initial MPP regs: 01222222 11110000 33330011 33003333 00000033 00000000 00000000
+  final MPP regs: 01222222 11110000 33330011 33003333 00000033 00000000 00000000
+lschlv2_init: finished
+bio: create slab <bio-0> at 0
+vgaarb: loaded
+SCSI subsystem initialized
+libata version 3.00 loaded.
+Switching to clocksource orion_clocksource
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+TCP reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+PCI: CLS 0 bytes, default 32
+Unpacking initramfs...
+msgmni has been set to 120
+io scheduler noop registered
+io scheduler deadline registered (default)
+mv_xor_shared mv_xor_shared.0: Marvell shared XOR driver
+mv_xor_shared mv_xor_shared.1: Marvell shared XOR driver
+mv_xor mv_xor.0: Marvell XOR: ( xor cpy )
+mv_xor mv_xor.1: Marvell XOR: ( xor fill cpy )
+mv_xor mv_xor.2: Marvell XOR: ( xor cpy )
+mv_xor mv_xor.3: Marvell XOR: ( xor fill cpy )
+Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+serial8250.0: ttyS0 at MMIO 0xf1012000 (irq = 33) is a 16550A
+console [ttyS0] enabled
+loop: module loaded
+sata_mv sata_mv.0: version 1.28
+sata_mv sata_mv.0: slots 32 ports 1
+scsi0 : sata_mv
+ata1: SATA max UDMA/133 irq 21
+mv643xx_eth: MV-643xx 10/100/1000 ethernet driver version 1.4
+mv643xx_eth smi: probed
+mv643xx_eth_port mv643xx_eth_port.0: eth0: port 0 with MAC address 00:50:43:ff:a9:69
+mv643xx_eth_port mv643xx_eth_port.1: eth1: port 0 with MAC address 00:24:a5:a4:c1:56
+mousedev: PS/2 mouse device common for all mice
+rtc-mv rtc-mv: retrieved alarm date/time is not valid.
+rtc-mv rtc-mv: rtc core: registered rtc-mv as rtc0
+cpuidle: using governor ladder
+cpuidle: using governor menu
+Registered led device: func
+Registered led device: alarm
+Registered led device: info
+Registered led device: power
+Registered led device: func2
+TCP cubic registered
+NET: Registered protocol family 17
+Registering the dns_resolver key type
+Gating clock of unused units
+before: 0x00dfc3fd
+ after: 0x00cf41c9
+registered taskstats version 1
+input: gpio-keys as /devices/platform/gpio-keys/input/input0
+ata1: SATA link up 3.0 Gbps (SStatus 123 SControl F300)
+ata1.00: ATA-8: ST31000528AS, CC44, max UDMA/133
+ata1.00: 1953525168 sectors, multi 0: LBA48 NCQ (depth 31/32)
+ata1.00: configured for UDMA/133
+scsi 0:0:0:0: Direct-Access     ATA      ST31000528AS     CC44 PQ: 0 ANSI: 5
+sd 0:0:0:0: [sda] 1953525168 512-byte logical blocks: (1.00 TB/931 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+ sda: sda1 sda2 sda3 sda4 sda5 sda6
+sd 0:0:0:0: [sda] Attached SCSI disk
+EXT4-fs (sda2): mounting ext3 file system using the ext4 subsystem
+EXT4-fs (sda2): recovery complete
+EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+VFS: Mounted root (ext3 filesystem) on device 8:2.
+Freeing init memory: 124K
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+orion-ehci orion-ehci.0: Marvell Orion EHCI
+orion-ehci orion-ehci.0: new USB bus registered, assigned bus number 1
+orion-ehci orion-ehci.0: irq 19, io mem 0xf1050000
+orion-ehci orion-ehci.0: USB 2.0 started, EHCI 1.00
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: Marvell Orion EHCI
+usb usb1: Manufacturer: Linux 3.2.28-fjen-1 ehci_hcd
+usb usb1: SerialNumber: orion-ehci.0
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+udev[432]: renamed network interface eth0 to eth10
+Adding 1000444k swap on /dev/sda5.  Priority:-1 extents:1 across:1000444k 
+EXT4-fs (sda2): re-mounted. Opts: (null)
+EXT4-fs (sda2): re-mounted. Opts: (null)
+EXT4-fs (sda1): mounting ext3 file system using the ext4 subsystem
+EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+SGI XFS with security attributes, large block/inode numbers, no debug enabled
+XFS (sda6): Mounting Filesystem
+XFS (sda6): Ending clean mount
+NET: Registered protocol family 10
+ADDRCONF(NETDEV_UP): eth1: link is not ready
+mv643xx_eth_port mv643xx_eth_port.1: eth1: link up, 1000 Mb/s, full duplex, flow control disabled
+ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+fuse init (API version 7.17)
+tun: Universal TUN/TAP device driver, 1.6
+tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
